@@ -146,7 +146,7 @@ typedef struct
 	alert_lock *locks;
 	size_t size;
 	unsigned int sid;
-	char data[];
+	char data[1];  /* VARIABLE LENGTH ARRAY */
 } sh_memory;
 
 
